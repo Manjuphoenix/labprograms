@@ -33,7 +33,7 @@ def astar(maze,start,end):
       path.append(current.position)
       current=current.parent
     return path[::-1]
-  children=[]Om
+  children=[]
   for new_position in [(0,-1),(0,1),(-1,0),(1,0),(-1,-1),(-1,1),(1,-1),(1,1)]:
     node_position=(current_node.position[0]+new_position[0],current_node.position[1]+new_position[1])
     if node_position[0]>(len(maze)-1) or node_position[0]<0 or node_position[1]>(len(maze[len(maze)-1])-1) or node_position[1]<0:
